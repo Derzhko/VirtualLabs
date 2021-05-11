@@ -1,22 +1,22 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type=text/javascript>
         $(function() {
-          $('a#test').bind('click', function() {
-            $.getJSON('/background_process_test',
+          $('a#servo').bind('click', function() {
+            $.getJSON('/background_process_servo+',
                 function(data) {
               //do nothing
             });
             return false;
           });
-          $('a#test2').bind('click', function() {
-            $.getJSON('/background_process_test',
+          $('a#servo-').bind('click', function() {
+            $.getJSON('/background_process_servo-',
                 function(data) {
               //do nothing
             });
             return false;
           });
-          $('a#test3').bind('click', function() {
-            $.getJSON('/background_process_test',
+          $('a#generator').bind('click', function() {
+            $.getJSON('/background_process_generator',
                 function(data) {
               //do nothing
             });
@@ -30,11 +30,11 @@
 <div class='container'>
     <h3>Test</h3>
         <form>
-            <a href=# id=test><button class='btn btn-default'>Test</button></a>
-            <a href=# id=test2><button class='btn btn-default'>Test</button></a>
+            <a href=# id=servo><button class='btn btn-default'>серво+</button></a>
+            <a href=# id=servo-><button class='btn btn-default'>серво-</button></a>
         </form>
         <form>
-                <a href=# id=test3><button class='btn btn-default'>Test</button></a>
+                <a href=# id=generator><button class='btn btn-default'>генератор</button></a>
         </form>
 
 

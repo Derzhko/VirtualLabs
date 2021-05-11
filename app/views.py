@@ -7,7 +7,17 @@ def json():
     return render_template('json.html')
 
 #background process happening without any refreshing
-@app.route('/background_process_test')
-def background_process_test():
-    print ("Hello")
+@app.route('/background_process_servo+')
+def background_process_servo_plus():
+    print ("серво+")
+    return ("nothing")
+
+@app.route('/background_process_servo-')
+def background_process_servo_minus():
+    print ("серво-")
+    return ("nothing")
+
+@app.route('/background_process_generator')
+def background_process_generator():
+    print ("генератор")
     return ("nothing")
